@@ -2,19 +2,36 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jonaminz Movies</title>
     <meta name="description" content="Jonathan 與 Minz 的電影討論、想看清單與訂票小工具。" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
+    <!--
+      這個網頁不經過任何建置工具（沒有 npm install、沒有 Vite）。
+      React／Babel／Tailwind 都是直接從 CDN 載入純瀏覽器版本，Babel 會在
+      瀏覽器讀頁面的當下即時把 app.jsx 的 JSX 語法轉成純 JavaScript。
+      這對一個兩人用的小 app 來說完全夠快；缺點只有「請求外部 CDN」，
+      沒有網路連線時打不開，也沒辦法離線編輯後直接測試。
+      要改畫面：直接編輯 app.jsx／styles.css，存檔後重新整理瀏覽器即可，
+      不需要任何指令。
+    -->
+    <script src="https://unpkg.com/react@19/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@19/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone@7/babel.min.js" crossorigin></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="text/babel" src="app.jsx" data-presets="react"></script>
   </body>
 </html>
