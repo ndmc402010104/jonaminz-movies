@@ -1,0 +1,15 @@
+{
+  "contractVersion": 1,
+  "app": {
+    "projectId": "jonaminz-movies",
+    "title": "Jonaminz Movies",
+    "description": "Jonathan 與 Minz 的電影討論、想看清單與訂票小工具（MVP demo）。"
+  },
+  "entries": [
+    {
+      "entryId": "main",
+      "title": "Jonaminz Movies",
+      "url": "/jonaminz-movies/"
+    }
+  ]
+}
