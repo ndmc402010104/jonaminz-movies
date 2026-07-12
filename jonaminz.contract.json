@@ -3,7 +3,21 @@
   "app": {
     "projectId": "jonaminz-movies",
     "title": "Jonaminz Movies",
-    "description": "Jonathan 與 Minz 的電影討論、想看清單與訂票小工具（MVP demo）。"
+    "description": "Jonathan 與 Minz 的電影討論、想看清單與訂票小工具（MVP demo）。",
+    "visualIdentity": {
+      "name": "酒紅 Editorial",
+      "tagline": "雜誌感、電影感",
+      "palette": {
+        "background": "#fbfaf7",
+        "surface": "#ffffff",
+        "accent": "#8f4654",
+        "accent2": "#d8b876",
+        "ink": "#25232b"
+      },
+      "typography": {
+        "display": "Georgia, \"Noto Serif TC\", serif"
+      }
+    }
   },
   "entries": [
     {
